@@ -3,20 +3,23 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class JunYiAcademy {
-
+    //均一平台教育基金會工程師遠端筆試
     public static void main(String[] args) {
+        //Q1-A:
         System.out.println("Reversed String: " + reverseString("junyiacademy"));
+        //Q1-B:
         System.out.println("Reversed Sentence: " + reverseSentence("flipped class room is important"));
+        //Q2:
         System.out.println("Removed Multiples and Count: " + removeMultiples(15,3,5).size());
     }
-
+    //Q1-A:
     public static String reverseString(String string) {
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append(string);
         stringBuilder.reverse();
         return stringBuilder.toString();
     }
-
+    //Q1-B:
     public static String reverseSentence(String sentence) {
         String[] words = sentence.split(" ");
         StringBuilder stringBuilder = new StringBuilder();
@@ -25,7 +28,7 @@ public class JunYiAcademy {
         }
         return stringBuilder.toString();
     }
-
+    //Q2:
     public static List<Integer> removeMultiples(int integer, int multiple1, int multiple2) {
         List<Integer> numbers = Stream.iterate(1, n -> n + 1)
                                       .limit(integer)
