@@ -5,12 +5,16 @@ import java.util.stream.Stream;
 public class JunYiAcademy {
     //均一平台教育基金會工程師遠端筆試
     public static void main(String[] args) {
-        //Q1-A:
+        //A1-A:
         System.out.println("Reversed String: " + reverseString("junyiacademy"));
-        //Q1-B:
+        //A1-B:
         System.out.println("Reversed Sentence: " + reverseSentence("flipped class room is important"));
-        //Q2:
+        //A2:
         System.out.println("Removed Multiples and Count: " + removeMultiples(15,3,5).size());
+
+        //Q3: 房間裡有三個袋子...你只能選一個袋子，拿出裡面一支筆，看是鉛筆還是原子筆，然後你要推論出這三 個袋子分別的情況。
+        //A3:
+
     }
     //Q1-A:
     public static String reverseString(String string) {
